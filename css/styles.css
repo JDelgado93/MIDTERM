@@ -14,29 +14,54 @@ body{
   box-sizing: border-box;
 }
 	
-/*ul {
-list-style-type:none;
-margin:0;
-padding:0;
-overflow:hidden;
+/* ============================
+* NAVIGATION 
+* Modified from: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/a-simple-responsive-mobile-first-navigation/
+* =============================*/  
+  
+#main_nav{
+  clear:both;
+}  
+
+#main_nav ul{
+  list-style: none;
 }
-li
-{
-float:left;
+
+#main_nav li a{
+  display:block;
+  color:#fff;
+  background-color: #555;
+  text-transform: uppercase;
+  padding: 0.625em; /* 10/16 */
+  text-decoration:none;
+  border-bottom: 1px solid #eee;
+  font-weight:900;
 }
-a:link,a:visited
-{
-display:block;
-width:120px;
-font-weight:bold;
-color:#FFFFFF;
-background-color:#98bf21;
-text-align:center;
-padding:4px;
-text-decoration:none;
-text-transform:uppercase;
+
+#main_nav li a:hover{
+  color:#555;
+  background-color: #fff;
 }
-a:hover,a:active
-{
-background-color:#7A991A;
-}*/
+  
+#main_nav li a:active, #main_nav li a.active{
+  color:#555;
+  background-color: #f90;
+}  
+
+/* menu button */
+.menu a{
+  padding:0.5em 0.625em; /*10/16 */
+  background-color: #555;
+  border-radius:5px;
+  color: #fff;
+  text-decoration:none;
+}
+
+.menu a:hover{
+  color:#555;
+  background-color: #f90;
+}
+ 
+.menu{
+  margin-bottom:1em;
+}
