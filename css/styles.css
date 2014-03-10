@@ -14,9 +14,9 @@ index.html
 
 #index{
 	width: 96%;
-	background-color: #57C3C7;
+	background-color: #C2E8EB;
 	margin: 0 auto;
-	border: 1px solid #666;
+	border: 1px solid #C2E8EB;
 
 	font-size:100%;
 	line-height:1.5;
@@ -24,9 +24,32 @@ index.html
 	}
 #index header{
   background-color: red;
+  font-weight: 900;
+  /*font-size: 3em;*/
+  text-align: center;
+}
+#index .FS{
+  width: 100%;
+  padding: 10% 20%;
 }
 
+#index .FS .column1{
+  float: left;
+}
+#index .FS .Column2{
+  float: right;
+}
+#index .track{
+    width: 100%;
+    background-color: #214963;
+   /* background-color: #FF888C;*/
+    padding: 10% 20%;
+    border: #57C3C7 solid;}
 
+  #index .track h4{
+    font-weight: 900;
+    text-align: center;
+  }
 	
 /* ============================
           NAVIGATION 
@@ -66,7 +89,7 @@ index.html
 .menu a{
   padding:0.5em 0.625em; /*10/16 */
   background-color: #555;
-  border-radius:5px;
+  border-radius:20px 60px;
   color: #fff;
   text-decoration:none;
 }
