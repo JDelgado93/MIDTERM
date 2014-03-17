@@ -4,9 +4,14 @@
   box-sizing: border-box;}
 
   img,video{
-  width: auto; 
+    display: block;
+  margin: 0px auto;
+  width: 100%;
+  height:100%;
+  padding: .5em;
+  /*width: auto; 
   max-width: 100%; 
-  height: auto;}
+  height: auto;*/}
 
 /*===========
 index.html
@@ -50,7 +55,45 @@ index.html
     font-weight: 900;
     text-align: center;
   }
+
+  /*=================
+    schedule.html
+  ==================*/
 	
+#schedule .track{
+    width: 100%;
+    background-color: #FF888C;
+    padding: 10% ;
+    border: white solid .2em;
+    text-align:justify;}
+
+  #schedule .track h3,h2{text-align: right;
+    font-weight: 900;}
+
+#schedule .session{
+    background-color: lightblue;
+  padding: 10%;
+  border: white solid .2em ; 
+  text-align: center;   
+}
+
+
+
+
+
+
+
+
+
+/*=====================
+    speakers.html
+=======================*/
+
+#speakers img{
+  float: left;
+}
+
+
 /* ============================
           NAVIGATION 
 ============================= */  
@@ -66,7 +109,7 @@ index.html
 #main_nav li a{
   display:block;
   color:#fff;
-  background-color: #555;
+  background-color: #82AAFF;
   text-transform: uppercase;
   padding: 0.625em; /* 10/16 */
   text-decoration:none;
@@ -78,27 +121,39 @@ index.html
 #main_nav li a:hover{
   color:#555;
   background-color: #fff;
+
 }
   
 #main_nav li a:active, #main_nav li a.active{
-  color:#555;
-  background-color: #f90;
+  color:#fff;
+  background-color: #2373C0;
 }  
 
 /* menu button */
 .menu a{
   padding:0.5em 0.625em; /*10/16 */
-  background-color: #555;
-  border-radius:20px 60px;
-  color: #fff;
+  background-color: #2373C0;
+  border-radius:20px 60px ;
+  color: black;
   text-decoration:none;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .menu a:hover{
   color:#555;
-  background-color: #f90;
-}
- 
+  background-color: #fff;
+  } 
 .menu{
   margin-bottom:1em;
 }
+
+
+
+
+
+
+
+/*color wheel website
+http://colorschemedesigner.com/#2N62cqFP.cOw0
+http://colorschemedesigner.com/#2Y62chx--dgwt*/
