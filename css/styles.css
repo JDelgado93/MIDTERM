@@ -3,15 +3,13 @@
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;}
 
-  img,video{
-    display: block;
-  margin: 0px auto;
-  width: 100%;
-  height:100%;
-  padding: .5em;
-  /*width: auto; 
-  max-width: 100%; 
-  height: auto;*/}
+ /*#index #sessions #speakers #about #videos #schedule */img,video
+ {width: auto; max-width: 100%; height: auto;}
+
+ footer 
+ {
+  text-align: center;
+ }
 
 /*===========
 index.html
@@ -19,7 +17,7 @@ index.html
 
 #index{
 	width: 96%;
-	background-color: #C2E8EB;
+	background-color: lightgrey;
 	margin: 0 auto;
 	border: 1px solid #C2E8EB;
 
@@ -27,51 +25,79 @@ index.html
 	line-height:1.5;
 	font-family:sans-serif;
 	}
-#index header{
-  background-color: red;
-  font-weight: 900;
-  /*font-size: 3em;*/
-  text-align: center;
+#index .box2
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: normal;
+  padding: auto;
 }
+
+#index .box3
+{
+  font-size: 1em;
+  line-height: 2;
+  text-align: center;
+  border: 2px dashed blue;
+
+}
+
+#index header{
+  background-color: lightblue;
+  font-weight: 600;
+  color: blue;
+  text-align: center;
+  border-bottom: solid blue .3em;}
+
 #index .FS{
   width: 100%;
   padding: 10% 20%;
 }
 
-#index .FS .column1{
-  float: left;
-}
-#index .FS .Column2{
-  float: right;
+#index .FS h3
+{
+  text-align: center;
 }
 #index .track{
     width: 100%;
-    background-color: #214963;
-   /* background-color: #FF888C;*/
+    background-color: lightblue;
+   text-align: left;
     padding: 10% 20%;
     border: #57C3C7 solid;}
 
   #index .track h4{
-    font-weight: 900;
+    font-weight: bolder;
     text-align: center;
   }
 
   /*=================
     schedule.html
   ==================*/
-	
+#schedule
+{
+ width: 96%;
+  background-color: lightgrey;
+  margin: 0 auto;
+  border: 1px solid #C2E8EB;
+
+  font-size:100%;
+  line-height:1.5;
+  font-family:sans-serif;
+}
+
 #schedule .track{
     width: 100%;
     background-color: #FF888C;
     padding: 10% ;
     border: white solid .2em;
-    text-align:justify;}
+    text-align:center;}
 
-  #schedule .track h3,h2{text-align: right;
-    font-weight: 900;}
+  #schedule .track h4,h2
+  {text-align: left;
+    font-weight: bolder;}
 
 #schedule .session{
-    background-color: lightblue;
+  background-color: lightblue;
   padding: 10%;
   border: white solid .2em ; 
   text-align: center;   
@@ -79,6 +105,26 @@ index.html
 
 
 
+/* =====================================
+   CSS for <iframe> embedded element
+   ===================================== */
+.mapWrapper {
+    position: relative;
+    padding-bottom: 66.6666667%; 
+    /* 
+    do math with the height of your iframe divided by the width, then converted to percent
+    in this example the height is 400 and the width is 600
+    400 / 600 = .66666667 
+    which is 66.6666667% */
+    height: 0;
+}
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -89,9 +135,7 @@ index.html
     speakers.html
 =======================*/
 
-#speakers img{
-  float: left;
-}
+
 
 
 /* ============================
@@ -115,6 +159,7 @@ index.html
   text-decoration:none;
   border-bottom: 1px solid #eee;
   font-weight:900;
+  text-align: right;
 }
 
 
